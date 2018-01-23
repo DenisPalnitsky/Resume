@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Denis Palnitsky</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112884116-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-112884116-1');
+    </script>
+    <!-- END of Google Analytics -->
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <style type="text/css">
+
+        #cv_content {
+            margin: auto;
+            max-width: 794px;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+
+</head>
+<body>
+  
+    <div id="cv_content"  >
+
+    </div>
+
+    <script>
+        $(function () {
+            $("#cv_content").load("/api/GoogleDocHtml #contents");
+        });
+    </script>
+
+</body>
+</html>
