@@ -1,9 +1,32 @@
 ﻿@{
-    ViewData["Title"] = "Denis Palnitsky web site";
+    ViewData["Title"] = "Denis Palnitsky Resume";
 }
 
 
+    
 
-<div id="cv_content">
-    @Html.Raw(ViewData["Content"])
-</div>
+<main role="main" class="container">
+
+    <div class="btn-group bg-dark">
+        <a class="btn btn-default" href="https://docs.google.com/document/export?format=pdf&id=1Rzf7T8J2RKAg_DHUu4M6Jyx4igzBQbIhUQ8f5ZFkJks">PDF Version</a>
+        <a class="btn btn-default" href="https://docs.google.com/document/export?exportFormat=doc&id=1Rzf7T8J2RKAg_DHUu4M6Jyx4igzBQbIhUQ8f5ZFkJks">MS Word Version </a>
+    </div>
+
+    <div id="cv_content">
+        @Html.Raw(ViewData["Content"])
+    </div>
+
+
+
+
+    @*<div class="col">
+            <a href="https://docs.google.com/document/export?format=pdf&id=1Rzf7T8J2RKAg_DHUu4M6Jyx4igzBQbIhUQ8f5ZFkJks">PDF</a>
+        </div>
+        <div class="col">
+            <a href="https://docs.google.com/document/export?format=pdf&id=1Rzf7T8J2RKAg_DHUu4M6Jyx4igzBQbIhUQ8f5ZFkJks"> Word </a>
+        </div>*@
+
+
+
+
+</main>
